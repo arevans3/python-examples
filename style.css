@@ -2,9 +2,9 @@ body {
 	background-color: #31353a;
 	background-image: url("Python-Logo.png");
 	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 500px;
-	min-height: 800px;
+	background-position: center 30px;
+	background-size: 50px;
+    min-width: 800px;
 }
 
 h1 {
@@ -13,48 +13,41 @@ h1 {
 }
 
 select {
-	margin-top: 60px;
-	text-align: center;
-    z-index: 1;
-    border-color: black;
-    border-style: solid;
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+option {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+option:hover {
+    background-color: #555;
+    color: white;
 }
 
 .center-align {
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    text-align: center;
-    vertical-align: center;
-    position: relative;
-    border-radius: 8px;
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  z-index: 15;
+  top: 25%;
+  left: 42%;
+  margin: -100px 0 0 -150px;
+  text-align: center;
 }
 
 .code {
-	margin-top: 100px;
-    width: 600px;
-    padding: 10px;
-    background-color: #31353a; 
-    min-height: 150px;
-    border-color: black;
-    border-style: solid;
+    margin-bottom: 40px;
 }
 
-.inv {
-    display: none;
-}
-
-.dropdown-content {
-    display: block;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+#gistList {
+    border-radius: 5px;
 }

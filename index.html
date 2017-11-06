@@ -1,50 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-         <link rel="stylesheet" type="text/css" href="style.css">
-           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Python Examples</title>
     </head>
 
     <body>
-        <br>
-        <br>
-        <h1 class="center-align"> Python Examples </h2>
-        <div class="center-align">
-            <select id="target">
-                <option class="dropdown-content" value="">Select</option>
-                <option class="dropdown-content" value="lists">Lists</option>
-                <option class="dropdown-content" value="dictionaries">Dictionaries</option>
-                <option class="dropdown-content" value="loops">Loops</option>
-            </select>
-        </div>
 
-        <div id="target-div" class="code center-align">
-            <div id="lists" class="inv">
+        <div class="center-align">
+            <div class="code">
                 <script src="https://gist.github.com/arevans3/3e96a11e51e668a343baf5dd61aa0a36.js"></script>
             </div>
-            <div id="dictionaries" class="inv">
 
+            <div class="code">
+                <script src="https://gist.github.com/arevans3/5f3bfb8f4ed63f7c5f55594dc9c32fb6.js"></script>
             </div>
-            <div id="loops" class="inv">
 
+            <div class="code">
+                <script src="https://gist.github.com/arevans3/2b933e422d8e6cbab9b0842cd0ed2075.js"></script>
             </div>
+            
+            <div class="code">
+                <script src="https://gist.github.com/arevans3/5fd443ea70ba3f2d979b5d5e77df4641.js"></script>
+            </div>
+            
         </div>
 
-        <script>
-            document
-                .getElementById('target')
-                .addEventListener('change', function () {
-                    'use strict';
-                    var vis = document.querySelector('.vis'),   
-                        target = document.getElementById(this.value);
-                    if (vis !== null) {
-                        vis.className = 'inv';
-                    }
-                    if (target !== null ) {
-                        target.className = 'vis';
-                    }
-            });
-        </script>
     </body>
 </html>
