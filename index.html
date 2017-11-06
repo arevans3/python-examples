@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+         <link rel="stylesheet" type="text/css" href="style.css">
+           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <title>Python Examples</title>
     </head>
-    <style>
-.inv {
-    display: none;
-}
-    </style>
-    <body>
-        <select id="target">
-            <option value="">Select...</option>
-            <option value="lists">Lists</option>
-            <option value="dictionaries">Dictionaries</option>
-            <option value="loops">Loops</option>
-        <select>
 
-        <div id="lists" class="inv">
-            <script src="https://gist.github.com/arevans3/3e96a11e51e668a343baf5dd61aa0a36.js"></script>
+    <body>
+        <br>
+        <br>
+        <h1 class="center-align"> Python Examples </h2>
+        <div class="center-align">
+            <select id="target">
+                <option class="dropdown-content" value="">Select</option>
+                <option class="dropdown-content" value="lists">Lists</option>
+                <option class="dropdown-content" value="dictionaries">Dictionaries</option>
+                <option class="dropdown-content" value="loops">Loops</option>
+            </select>
         </div>
-        <div id="dictionaries" class="inv">Content 2</div>
-        <div id="loops" class="inv">Content 3</div>
+
+        <div id="target-div" class="code center-align">
+            <div id="lists" class="inv">
+                <script src="https://gist.github.com/arevans3/3e96a11e51e668a343baf5dd61aa0a36.js"></script>
+            </div>
+            <div id="dictionaries" class="inv">
+
+            </div>
+            <div id="loops" class="inv">
+
+            </div>
+        </div>
 
         <script>
             document
